@@ -1,0 +1,40 @@
+<single-spa-router>
+  <!--
+
+    This is the single-spa Layout Definition for your microfrontends.
+    See https://single-spa.js.org/docs/layout-definition/ for more information.
+
+  -->
+
+  <!-- Example layouts you might find helpful:
+
+  <nav>
+    <application name="@org/navbar"></application>
+  </nav>
+  <route path="settings">
+    <application name="@org/settings"></application>
+  </route>
+
+  -->
+  <nav>
+    <application name="@single-spa-microfrontend-angular-vue-react/navbar-cw"></application>
+  </nav>
+  <main>
+    <route default>
+      <application
+        name="@single-spa-microfrontend-angular-vue-react/homepage-cw"
+      ></application>
+    </route>
+    <route path="react">
+      <application name="@single-spa-microfrontend-angular-vue-react/react-cw"></application>
+    </route>
+    <route path="vue">
+      <application name="@single-spa-microfrontend-angular-vue-react/vue-cw"></application>
+    </route>
+    <route path="angular">
+      <application
+        name="@single-spa-microfrontend-angular-vue-react/angular-cw"
+      ></application>
+    </route>
+  </main>
+</single-spa-router>
