@@ -21,46 +21,52 @@ microfrontend at a time, not even having to clone, npm install, or boot up all o
 To try this out, clone the repo and run the following commands:
 
 # First terminal tab
+```
 cd root-config
 npm i
 npm run build
 npm start
 ```
 
-```
+
 # Second terminal tab
+```
 cd homepage
 npm i
 npm run build
 npm start
 ```
 
-```
+
 # Third terminal tab
+```
 cd navbar
 npm i
 npm run build
 npm start
 ```
 
-```
+
 # Fourth terminal tab
+```
 cd react
 npm i
 npm run build
 npm start
 ```
 
-```
+
 # Fifth terminal tab
+```
 cd angular
 npm i
 npm run build
 npm start
 ```
 
-```
+
 # Sixth terminal tab
+```
 cd vue
 npm i
 npm run build
@@ -68,7 +74,7 @@ npm run serve
 ```
 
 
-```
+
 ##  To run the application
 Now go to http://localhost:9000 in a browser. Note that you can change any of the ports for the projects by modifying the Import Map inside of
 root-config/index.ejs.
